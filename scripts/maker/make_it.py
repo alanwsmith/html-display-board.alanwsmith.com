@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from string import Template
 
@@ -135,7 +135,7 @@ with open("output.html", "w") as _out:
     for row_num in range(0,7):
         _out.write("<tr>")
         for cell_num in range(0,5):
-            _out.write(f'<td width="14" height="12"><font size="5" face="monospace, monospaced"><marquee>{spacer}')
+            _out.write(f'<td width="20" height="12"><font color="#fa2828" size="5" face="monospace, monospaced"><marquee>{spacer}')
             for letter_num in range(0,len(letters) - 1):
                 if letters[letter_num][row_num][cell_num] == "":
                     _out.write("&nbsp;")
